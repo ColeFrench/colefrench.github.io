@@ -1,10 +1,17 @@
-#github {
-    border-bottom: 0.05em dashed gray;
-    color: #cc0000;
-    cursor: pointer;
+a, #github {
+    border-bottom: 1px dashed gray;
+    color: #aaa;
     transition: color 0.5s;
 }
 
-#github:hover {
-    color: #ff0000;
+#github {
+    cursor: pointer;
+}
+
+a:hover, #github:hover {
+    color: #777;
+}
+
+a:hover {
+    text-decoration: none;
 }
