@@ -1,17 +1,82 @@
+@font-face {
+    font-family: Lato-Light;
+    src: url("../fonts/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: Lato-Medium;
+    src: url("../fonts/Lato-Medium.ttf");
+}
+
+body {
+    background-image: url("../images/background.png");
+    font-family: Lato-Medium;
+    margin-left: 55px;
+    transition: margin-left 0.25s;
+}
+
+#navbar-button {
+    cursor: pointer;
+    margin-left: -55px;
+    margin-top: 18px;
+    position: fixed;
+    transition: color 0.25s, margin-left 0.25s;
+    z-index: 1;
+}
+
+#navbar-left {
+    background-color: black;
+    height: 100%;
+    margin-left: -110px;
+    padding-top: 80px;
+    position: fixed;
+    transition: margin-left 0.25s;
+    min-width: 55px;
+    visibility: hidden;
+}
+
+#links .panel, #links .panel-heading {
+    background-color: #777;
+    border: none;
+    border-radius: 0;
+}
+
+#links h4 > a {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+}
+
+#links h4 > a:hover {
+    color: #bbb;
+}
+
+#links .list-group-item {
+    border-radius: 0;
+}
+
+#current .panel-heading {
+    background-color: #aaa;
+}
+
 a, #github {
+    font-family: Lato-Light;
+    transition: color 0.5s;
+}
+
+.container a, #github {
     border-bottom: 1px dashed gray;
     color: #aaa;
-    transition: color 0.5s;
 }
 
 #github {
     cursor: pointer;
 }
 
-a:hover, #github:hover {
+.container a:hover, #github:hover {
     color: #777;
 }
 
-a:hover {
+a:focus, a:hover {
     text-decoration: none;
 }
