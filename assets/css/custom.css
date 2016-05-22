@@ -1,18 +1,46 @@
 @font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato.ttf");
+}
+
+@font-face {
     font-family: Lato-Light;
     src: url("../fonts/Lato-Light.ttf");
 }
 
 @font-face {
-    font-family: Lato-Medium;
-    src: url("../fonts/Lato-Medium.ttf");
+    font-family: Raleway;
+    src: url("../fonts/Raleway.ttf");
 }
 
 body {
     background-image: url("../images/background.png");
-    font-family: Lato-Medium;
+    font-family: Raleway;
     margin-left: 55px;
     transition: margin-left 0.25s;
+}
+
+h1 {
+    font-family: Lato;
+}
+
+a {
+    transition: color 0.5s;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+#github {
+    border-bottom: 1px dashed gray;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+#github:hover {
+    color: #777;
 }
 
 #navbar-button {
@@ -26,6 +54,7 @@ body {
 
 #navbar-left {
     background-color: black;
+    font-family: Lato-Light;
     height: 100%;
     margin-left: -110px;
     padding-top: 80px;
@@ -59,24 +88,24 @@ body {
     background-color: #aaa;
 }
 
-a, #github {
-    font-family: Lato-Light;
-    transition: color 0.5s;
+#current-list {
+    background-color: #f5f5f5;
 }
 
-.container a, #github {
-    border-bottom: 1px dashed gray;
+.container a {
     color: #aaa;
 }
 
-#github {
-    cursor: pointer;
+.container a:not([class=bookmarklet]) {
+    border-bottom: 1px dashed gray;
 }
 
-.container a:hover, #github:hover {
+.container a:hover {
     color: #777;
 }
 
-a:focus, a:hover {
-    text-decoration: none;
+.bookmarklet {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
 }

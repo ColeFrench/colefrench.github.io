@@ -17,14 +17,20 @@ $("#navbar-button").click(function() {
     toggle = !toggle;
 });
 
-$("#links h4 > a").click(function() {
+$("#links h4 > a[data-toggle]").click(function() {
     if ($(this).find("i").hasClass("fa-caret-down")) {
         $(this).find("i").removeClass("fa-caret-down").addClass("fa-caret-up");
         
-        if($("#links h4 > a").not(this).find("i").hasClass("fa-caret-up")) {
-            $("#links h4 > a").not(this).find("i").removeClass("fa-caret-up").addClass("fa-caret-down");
+        if($("#links h4 > a[data-toggle]").not(this).find("i").hasClass("fa-caret-up")) {
+            $("#links h4 > a[data-toggle]").not(this).find("i").removeClass("fa-caret-up").addClass("fa-caret-down");
         }
     } else if ($(this).find("i").hasClass("fa-caret-up")) {
         $(this).find("i").removeClass("fa-caret-up").addClass("fa-caret-down");
     }
+});
+
+$("#links .list-group-item:not([id])").hover(function() {
+    $(this).css("background-color", "#f5f5f5");
+}, function() {
+    $(this).css("background-color", "#fff");
 });

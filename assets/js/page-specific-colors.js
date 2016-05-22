@@ -1,4 +1,6 @@
 var page = window.location.href.substring(window.location.href.lastIndexOf("/") + 1);
+var dir = window.location.href.substring(0, window.location.href.lastIndexOf("/"));
+dir = dir.substring(dir.lastIndexOf("/") + 1);
 var pColor = "#aaa";
 var sColor = "#777";
 var aboutPColor = "#dd0000";
@@ -11,19 +13,19 @@ var toolsPColor = "#dd00dd";
 var toolsSColor = "#aa00aa";
 
 $("#about").css("color", aboutPColor).hover(function(e) {
-    $(this).css("color", e.type === "mouseenter" ? aboutSColor : aboutPColor);
+    $(this).css("color", e.type == "mouseenter" ? aboutSColor : aboutPColor);
 });
 
 $("#schoolwork").css("color", schoolworkPColor).hover(function(e) {
-    $(this).css("color", e.type === "mouseenter" ? schoolworkSColor : schoolworkPColor);
+    $(this).css("color", e.type == "mouseenter" ? schoolworkSColor : schoolworkPColor);
 });
 
 $("#robotics").css("color", roboticsPColor).hover(function(e) {
-    $(this).css("color", e.type === "mouseenter" ? roboticsSColor : roboticsPColor);
+    $(this).css("color", e.type == "mouseenter" ? roboticsSColor : roboticsPColor);
 });
 
 $("#tools").css("color", toolsPColor).hover(function(e) {
-    $(this).css("color", e.type === "mouseenter" ? toolsSColor : toolsPColor);
+    $(this).css("color", e.type == "mouseenter" ? toolsSColor : toolsPColor);
 });
 
 if (~page.indexOf(".html")) {
@@ -39,8 +41,19 @@ switch (page) {
         pColor = roboticsPColor;
         sColor = roboticsSColor;
         break;
+    default:
+        switch (dir) {
+            case "schoolwork":
+                pColor = schoolworkPColor;
+                sColor = schoolworkSColor;
+                break;
+            case "tools":
+                pColor = toolsPColor;
+                sColor = toolsSColor;
+                break;
+        }
 }
 
 $(".container a, #github").css("color", pColor).hover(function(e) {
-    $(this).css("color", e.type === "mouseenter" ? sColor : pColor);
+    $(this).css("color", e.type == "mouseenter" ? sColor : pColor);
 });

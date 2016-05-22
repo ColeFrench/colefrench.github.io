@@ -8,12 +8,12 @@
         <meta name="author" content="Cole French">
         <link rel="icon" href="https://avatars2.githubusercontent.com/u/16979554">
         
-        <title>Robotics - Cole French</title>
+        <title>Bookmarklets - Cole French</title>
         
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-        <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-        <link href="assets/css/custom.css" rel="stylesheet">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+        <link href="../assets/css/custom.css" rel="stylesheet">
         
         <!--[if lt IE 9]>
             <script src="assets/js/html5shiv.min.js"></script>
@@ -29,7 +29,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a id="about" class="text-uppercase" href="about">About</a>
+                            <a id="about" class="text-uppercase" href="../about">About</a>
                         </h4>
                     </div>
                 </div>
@@ -48,14 +48,14 @@
                         </div>
                     </div>
                 </div>
-                <div id="current" class="panel panel-default">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a id="robotics" class="text-uppercase" href="robotics">Robotics</a>
+                            <a id="robotics" class="text-uppercase" href="../robotics">Robotics</a>
                         </h4>
                     </div>
                 </div>
-                <div class="panel panel-default">
+                <div id="current" class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a id="tools" class="text-uppercase" data-toggle="collapse" data-parent="#links" href="#tools-links">Tools
@@ -67,25 +67,19 @@
                     <div id="tools-links" class="panel-collapse collapse">
                         <div class="list-group">
                             <!--<a href="#" class="list-group-item"></a>-->
-                            <a href="tools/bookmarklets" class="list-group-item">Bookmarklets</a>
-                            <a href="tools/userscripts" class="list-group-item">Userscripts</a>
+                            <a href="bookmarklets" id="current-list" class="list-group-item">Bookmarklets</a>
+                            <a href="userscripts" class="list-group-item">Userscripts</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
-            <h1>Robotics
-                <i class="fa fa-gears fa-lg fa-fw" aria-hidden="true"></i>
+            <h1>Bookmarklets
+                <i class="fa fa-bookmark fa-lg fa-fw" aria-hidden="true"></i>
             </h1>
-            <p>I'm a member of a robotics team called 2 Train Robotics. Check out our website
-                <a href="http://2train395.com">here</a>.
-            </p>
-            <p>2 Train Robotics is among thousands of teams participating in the annual
-                <a href="http://www.firstinspires.org/robotics/frc">FIRST Robotics Competition</a>,
-            a competition dedicated to educating youth in the fields of science, technology, math and engineering. Each year, teams of students design and manufacture a robot which must accomplish a goal based on a given theme in just six weeks. Different teams collaborate with each other while competing fiercely, creating an environment of support and rivalry known as
-                <a href="http://www.firstinspires.org/about/vision-and-mission">gracious professionalism</a>.
-            </p>
+            <p>Bookmarks are links to pages which you go to a lot or want to create a quick reference to. Likewise, bookmarklets are pieces of JavaScript code which you can inject into a page by clicking on them. Simply drag the bookmarklets below to your bookmarks bar to save them.</p>
+            <a class="bookmarklet" href='javascript:(function(){document.body.appendChild(document.createElement("script")).src="https://colefrench.github.io/assets/js/toggle-passwords.js";})();'>Toggle Passwords</a>
             <hr>
             <footer>
                 <p>&copy; 2016 Cole French
@@ -96,12 +90,12 @@
             </footer>
         </div>
         
-        <script src="assets/js/redirect.js"></script>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-        <script src="assets/js/page-specific-colors.js"></script>
-        <script src="assets/js/navigation.js"></script>
-        <script src="assets/js/github.js"></script>
+        <script src="../assets/js/redirect.js"></script>
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="../assets/js/page-specific-colors.js"></script>
+        <script src="../assets/js/navigation.js"></script>
+        <script src="../assets/js/github.js"></script>
     </body>
 </html>
