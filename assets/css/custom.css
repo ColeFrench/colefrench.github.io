@@ -104,6 +104,10 @@ a:focus, a:hover {
     color: #777;
 }
 
+div:not([class=container]) p:nth-child(2) {
+    display: inline-block;
+}
+
 .bookmarklet {
     border: 1px solid gray;
     border-radius: 10px;
