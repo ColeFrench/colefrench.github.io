@@ -1,0 +1,12 @@
+div#header {
+    margin-top: 1em
+}
+
+div.image {
+    margin: 1em;
+    width: 24em;
+}
+
+div.image p {
+    margin-top: 0.5em
+}
