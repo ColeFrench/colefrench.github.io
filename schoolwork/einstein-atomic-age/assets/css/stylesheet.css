@@ -1,4 +1,11 @@
+body {
+    /* Background pattern from Subtle Patterns */
+    background-image: url("../images/sayagata-400px.png");
+}
+
 div#header {
+    /* Background pattern from Subtle Patterns */
+    background-image: url("../images/confectionary.png");
     border: 1px solid #007;
     box-shadow: 4px 4px 10px #007;
     font-family: Revalia, cursive;
@@ -11,6 +18,8 @@ div#header h3 {
 }
 
 div.image {
+    /* Background pattern from Subtle Patterns */
+    background-image: url("../images/confectionary.png");
     border: 1px solid #007;
     margin: 0.5em;
     padding: 0.5em;
