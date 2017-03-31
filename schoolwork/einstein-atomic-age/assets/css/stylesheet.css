@@ -14,12 +14,13 @@ div.image {
     border: 1px solid #007;
     margin: 0.5em;
     padding: 0.5em;
-    transition: box-shadow 1s;
+    transition: box-shadow 1s, width 1s;
     width: 20em;
 }
 
 div.image:hover {
     box-shadow: 0 0 10px #007;
+    width: 20.25em;
 }
 
 div.image p {
