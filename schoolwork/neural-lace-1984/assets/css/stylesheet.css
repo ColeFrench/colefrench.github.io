@@ -1,0 +1,23 @@
+.background {
+    background: #909aa3 url("../images/neurons.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+.centered {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered div {
+    background-color: #fff;
+    border-radius: 1em;
+    font-family: Comfortaa, cursive;
+    opacity: 0.85;
+    padding: 2em;
+    text-align: center;
+}
