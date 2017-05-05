@@ -13,6 +13,8 @@ $("a").click(function() {
     var titleHeight = 0;
     var containerWidth = container.width();
 
+    $("audio")[0].pause();
+
     container.css({
         marginTop: container.offset().top,
         width: containerWidth
@@ -25,23 +27,24 @@ $("a").click(function() {
 
     title.animate({
         height: titleHeight
-    }, 750);
+    }, 500);
 
     titleExtras.animate({
         opacity: 0
-    }, 750, function() {
+    }, 500, function() {
         $(this).hide().css("opacity", "");
         title.css("height", "");
     });
 
     container.animate({
         marginTop: "1em"
-    }, 750, function() {
+    }, 500, function() {
         $(this).css("width", "");
         var normWidth = $(this).width();
+
         $(this).css("width", containerWidth).animate({
             width: normWidth
-        }, 750, function() {
+        }, 500, function() {
             $(this).css("width", "");
             var content = $(this).find("> .content");
             content.removeClass("d-none").show();
