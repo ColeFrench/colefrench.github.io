@@ -3,6 +3,7 @@
     background-size: cover;
     height: 100%;
     position: fixed;
+    top: 0;
     width: 100%;
 }
 
@@ -13,11 +14,34 @@
     transform: translate(-50%, -50%);
 }
 
-.centered div {
-    background-color: #fff;
+.centered > div, .centered > a, .container {
     border-radius: 1em;
     font-family: Comfortaa, cursive;
     opacity: 0.85;
-    padding: 2em;
     text-align: center;
+}
+
+.centered > div, .container {
+    background-color: #fff;
+    padding: 2em;
+}
+
+.centered > a {
+    background: #fff linear-gradient(to bottom, #fff, #909aa3);
+    background-size: auto 10em;
+    color: inherit;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    transition: background 1s, color 1s;
+}
+
+.centered > a:hover {
+    background-color: #909aa3;
+    background-position: 0 100%;
+    color: #fff;
+}
+
+.container {
+    padding-bottom: 0.5em;
 }
