@@ -12,7 +12,6 @@ $("a").click(function() {
     var button = container.find("> a");
     var titleHeight = 0;
     var containerWidth = container.width();
-    var normWidth = 0;
 
     container.css({
         marginTop: container.offset().top,
@@ -39,11 +38,22 @@ $("a").click(function() {
         marginTop: "1em"
     }, 750, function() {
         $(this).css("width", "");
-        normWidth = $(this).width();
+        var normWidth = $(this).width();
         $(this).css("width", containerWidth).animate({
             width: normWidth
         }, 750, function() {
-            $(this).css("width", "").find("> .content").hide().removeClass("d-none").fadeIn(750);
+            $(this).css("width", "");
+            var content = $(this).find("> .content");
+            content.removeClass("d-none").show();
+            var normHeight = $(this).height();
+            content.hide();
+
+            $(this).animate({
+                height: normHeight
+            }, 750, function() {
+                content.show();
+                $(this).css("height", "");
+            });
         });
     });
 });
