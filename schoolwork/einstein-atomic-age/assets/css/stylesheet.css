@@ -27,10 +27,12 @@ div.image {
     width: 20em;
 }
 
+/*
 div.image:hover {
     box-shadow: 0 0 10px #007;
     width: 20.25em;
 }
+*/
 
 div.image p {
     font-family: Lato, sans-serif;
