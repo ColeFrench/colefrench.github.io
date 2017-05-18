@@ -1,40 +1,68 @@
-body {
-    /* Background pattern from Subtle Patterns */
-    background-image: url("../images/sayagata-400px.png");
+.background {
+    background: #878787 url("../images/atomic-bomb.jpeg") no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-div#header {
-    /* Background pattern from Subtle Patterns */
-    background-image: url("../images/confectionary.png");
-    border: 1px solid #007;
-    box-shadow: 4px 4px 10px #007;
-    font-family: Revalia, cursive;
-    margin: 1em auto;
+.centered {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content, .centered > h5, .image {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.75);
     padding: 1em;
 }
 
-div#header h3 {
-    font-style: italic;
+.content h1 {
+    font-family: "Patua One", cursive;
 }
 
-div.image {
-    /* Background pattern from Subtle Patterns */
-    background-image: url("../images/confectionary.png");
-    border: 1px solid #007;
+.content h3 {
+    font-family: Lobster, cursive;
+}
+
+.centered h5 {
+    font-family: Lato, sans-serif;
+}
+
+.centered > h5 {
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: 1em;
+    transition: box-shadow 0.15s;
+}
+
+.centered > h5:hover {
+    box-shadow: inset 0 0 1em 0.5em #878787;
+}
+
+.image {
     margin: 0.5em;
-    padding: 0.5em;
-    transition: box-shadow 1s, width 1s;
+    transition: box-shadow 0.15s;
+    /* transition: box-shadow 1s, width 1s; */
     width: 20em;
 }
 
+.image:hover {
+    box-shadow: inset 0 0 1em 0.5em #878787;
+}
+
 /*
-div.image:hover {
+.image:hover {
     box-shadow: 0 0 10px #007;
     width: 20.25em;
 }
 */
 
-div.image p {
+.image p {
     font-family: Lato, sans-serif;
     margin-top: 0.5em;
 }
