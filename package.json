@@ -1,0 +1,28 @@
+{
+  "name": "colefrench-github-io",
+  "version": "1.0.0",
+  "description": "My personal website where you can read all about me and the things I enjoy doing.",
+  "homepage": "https://github.com/ColeFrench/colefrench.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/ColeFrench/colefrench.github.io/issues"
+  },
+  "license": "MIT",
+  "author": "Cole French",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColeFrench/colefrench.github.io.git"
+  },
+  "scripts": {
+    "clean": "rimraf **/assets/build/",
+    "build": "build.sh",
+    "watch": "nodemon -e css,js -x \"npm run clean && npm run build\""
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "clean-css": "latest",
+    "nodemon": "latest",
+    "postcss-cli": "latest",
+    "rimraf": "latest",
+    "uglify-js": "latest"
+  }
+}
