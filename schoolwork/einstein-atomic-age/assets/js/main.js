@@ -1,75 +1,66 @@
-var centered = $(".centered");
-var container = $(".container");
+(function($) {
+    'use strict';
 
-var content = $(".content");
-var contents = content.html();
+    var centered = $('.centered'),
+        container = $('.container'),
 
-var enterButton = $(".enter");
-var aboutButton = $(".about");
-var bibButton = $(".bib");
-var backButton = $(".back");
+        content = $('.content'),
+        contents = content.html(),
 
-enterButton.click(function() {
-    centered.hide();
-    container.removeClass("d-none").show();
-});
+        enterButton = $('.enter'),
+        aboutButton = $('.about'),
+        bibButton = $('.bib'),
+        viewButton = $('.view'),
+        backButton = $('.back');
 
-aboutButton.click(function() {
-    $(this).hide();
-    enterButton.hide();
-    bibButton.hide();
-    backButton.removeClass("d-none").show();
+    enterButton.click(function() {
+        centered.hide();
+        container.removeClass('d-none').show();
+    });
 
-    content.html("<h5>This website is &copy; 2017 Cole French and is the visual portion of his research paper for Professor Tiede's 10<sup>th</sup> grade Global History II class.</h5><h5>All images are cited inline and in the Annotated Bibliography in MLA format.</h5>");
-});
+    aboutButton.click(function() {
+        enterButton.hide();
+        $(this).hide();
+        bibButton.hide();
+        backButton.removeClass('d-none').show();
 
-bibButton.click(function() {
-    $(this).hide();
-    enterButton.hide();
-    aboutButton.hide();
-    backButton.removeClass("d-none").show();
+        content.html('<h5>This website is &copy; 2017 Cole French and is the visual portion of his research paper for Professor Tiede\'s 10<sup>th</sup> grade Global History II class.</h5><h5>All images are cited inline and in the Annotated Bibliography in MLA format.</h5><h5>Note that the Annotated Bibliography\'s page numbers will be corrected when the Research Paper is complete.</h5>');
+    });
 
-    content.html("<object width=\"425\" height=\"550\" type=\"application/pdf\" data=\"assets/pdf/annotated-bib.pdf\"><h5>Your browser could not load the PDF. Please try a different one.</h5></object>");
-});
+    bibButton.click(function() {
+        var distToTop,
+            factor,
+            paperHeight = 11,
+            paperWidth = 8.5,
+            pdfHeight,
+            pdfWidth,
+            padding = 10;
 
-backButton.click(function() {
-    $(this).hide();
-    enterButton.show();
-    aboutButton.show();
-    bibButton.show();
+        enterButton.hide();
+        aboutButton.hide();
+        $(this).hide();
+        viewButton.removeClass('d-none').show();
+        backButton.removeClass('d-none').show();
 
-    content.html(contents);
-});
+        distToTop = viewButton[0].getBoundingClientRect().top;
+        factor = Math.floor(distToTop / paperWidth);
+        pdfHeight = factor * paperHeight - padding > 0 ? factor * paperHeight - padding : factor * paperHeight;
+        pdfWidth = factor * paperWidth;
 
-/*
-var delay = 500;
+        content.html('<object width="' + pdfWidth + '" height="' + pdfHeight + '" type="application/pdf" data="assets/pdf/annotated-bib.pdf"><h5>Your browser could not load the PDF. Please try a different one.</h5></object>');
+    });
 
-$(".image").hover(function() {
-    var p = $(this).find("> p");
-    var newHeight = 0;
+    viewButton.click(function() {
+        window.open('assets/pdf/annotated-bib.pdf', '_blank');
+    });
 
-    p.removeClass("d-none").show();
-    newHeight = $(this).height();
-    p.hide();
+    backButton.click(function() {
+        enterButton.show();
+        aboutButton.show();
+        bibButton.show();
+        viewButton.hide();
+        $(this).hide();
 
-    $(this).animate({
-        height: newHeight
-    }, delay);
-
-    p.show();
-}, function() {
-    var p = $(this).find("> p");
-    var newHeight = 0;
-
-    p.hide();
-    newHeight = $(this).height();
-    p.show();
-
-    $(this).animate({
-        height: newHeight
-    }, delay);
-
-    p.hide();
-    $(this).css("height", "");
-});
-*/
+        content.html(contents);
+    });
+})(jQuery);

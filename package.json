@@ -35,5 +35,6 @@
     "postcss-cli": "^4.0.0",
     "rimraf": "^2.6.1",
     "uglify-js": "^3.0.9"
-  }
+  },
+  "private": true
 }
