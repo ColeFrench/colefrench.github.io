@@ -24,7 +24,7 @@
         bibButton.hide();
         backButton.removeClass('d-none').show();
 
-        content.html('<h5>This website is &copy; 2017 Cole French and is the visual portion of his research paper for Professor Tiede\'s 10<sup>th</sup> grade Global History II class.</h5><h5>All images are cited inline and in the Annotated Bibliography in MLA format.</h5><h5>Note that the Annotated Bibliography\'s page numbers will be corrected when the Research Paper is complete.</h5>');
+        content.html('<h5>This website is &copy; 2017 Cole French and is the visual portion of his research paper for Professor Tiede\'s 10<sup>th</sup> grade Global History II class.</h5><h5>All images are cited inline and in the Annotated Bibliography in MLA format.</h5>');
     });
 
     bibButton.click(function() {
