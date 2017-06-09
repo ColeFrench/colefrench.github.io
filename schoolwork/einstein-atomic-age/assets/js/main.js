@@ -11,7 +11,16 @@
         aboutButton = $('.about'),
         bibButton = $('.bib'),
         viewButton = $('.view'),
-        backButton = $('.back');
+        backButton = $('.back'),
+
+        listenButtons = $('.listen'),
+        playIcon = 'fa-volume-up',
+        stopIcon = 'fa-stop';
+
+    function stop(audio) {
+        audio.pause();
+        audio.currentTime = 0;
+    }
 
     enterButton.click(function() {
         centered.hide();
@@ -62,5 +71,25 @@
         $(this).hide();
 
         content.html(contents);
+    });
+
+    $('audio').on('ended', function() {
+        $(this)[0].currentTime = 0;
+        $(this).prev().find('> i').removeClass(stopIcon).addClass(playIcon);
+    });
+
+    listenButtons.click(function() {
+        var icon = $(this).find('> i'),
+            audio = $(this).next()[0];
+
+        if (icon.hasClass(playIcon)) {
+            if (audio.readyState >= 2) {
+                audio.play();
+                icon.removeClass(playIcon).addClass(stopIcon);
+            }
+        } else if (icon.hasClass(stopIcon)) {
+            stop(audio);
+            icon.removeClass(stopIcon).addClass(playIcon);
+        }
     });
 })(jQuery);

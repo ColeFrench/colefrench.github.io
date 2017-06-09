@@ -15,25 +15,25 @@
     transform: translate(-50%, -50%);
 }
 
-.content, .centered > h5, .image {
+.content, .centered > h5, .image, .image > h5 {
     background-color: #fff;
     background-color: rgba(255, 255, 255, 0.75);
     padding: 1em;
 }
 
-.content h1 {
+.content > h1 {
     font-family: "Patua One", cursive;
 }
 
-.content h3 {
+.content > h3 {
     font-family: Lobster, cursive;
 }
 
-.centered h5 {
+.centered h5, .image > h5 {
     font-family: Lato, sans-serif;
 }
 
-.centered > h5 {
+.centered > h5, .image > h5 {
     cursor: pointer;
     margin-bottom: 0;
     margin-top: 1em;
@@ -50,11 +50,15 @@
     width: 20em;
 }
 
-.image:hover {
+.image:hover, .image > h5:hover {
     box-shadow: inset 0 0 1em 0.5em #878787;
 }
 
-.image p {
+.image > p {
     font-family: Lato, sans-serif;
     margin-top: 0.5em;
+}
+
+.image > h5 {
+    background-color: rgba(255, 255, 255, 0.5);
 }
