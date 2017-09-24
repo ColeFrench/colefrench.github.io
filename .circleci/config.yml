@@ -34,6 +34,7 @@ jobs:
           key: npm-cache
           paths:
             - node_modules
+      - run: ls
       - run: npm run clean:css
       - run: npm run clean:js
       - run: npm run build:css
