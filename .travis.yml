@@ -12,9 +12,13 @@ script:
 cache:
   directories:
     - node_modules
+branches:
+  only:
+    - src
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   on:
-    branch: master
+    branch: src
+  target_branch: master
