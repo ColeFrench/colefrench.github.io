@@ -1,3 +1,3 @@
-# [www.colefrench.tech](https://www.colefrench.tech/) [![CircleCI](https://img.shields.io/circleci/project/github/ColeFrench/colefrench.github.io.svg)](https://circleci.com/gh/ColeFrench/colefrench.github.io) [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE.md)
+# [www.colefrench.tech](https://www.colefrench.tech/) [![Travis](https://img.shields.io/travis/ColeFrench/colefrench.github.io.svg)](https://travis-ci.org/ColeFrench/colefrench.github.io) [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE.md)
 
 My personal website.
