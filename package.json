@@ -16,9 +16,11 @@
     "clean:css": "rimraf build/assets/css",
     "clean:js": "rimraf build/assets/js",
     "clean": "rimraf build",
-    "build:css": "node build-css.js",
-    "build:js": "node build-js.js",
-    "build": "npm run build:css && npm run build:js && node copy-files.js"
+    "build:scss": "node scripts/build-scss.js",
+    "build:css": "node scripts/build-css.js",
+    "build:js": "node scripts/build-js.js",
+    "build:other": "node scripts/copy-files.js",
+    "build": "npm run build:scss && npm run build:css && npm run build:js && npm run build:other"
   },
   "private": true,
   "devDependencies": {
@@ -26,6 +28,7 @@
     "clean-css": "^4.1.9",
     "glob": "^7.1.2",
     "mkdirp": "^0.5.1",
+    "node-sass": "^4.7.2",
     "postcss": "^6.0.11",
     "rimraf": "^2.6.2",
     "uglify-js": "^3.1.2"

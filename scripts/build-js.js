@@ -12,7 +12,7 @@ const globOptions = {
         'build/**/*'
     ]
 };
-const files = glob.sync('**/assets/js/*.js', globOptions);
+const files = glob.sync('**/assets/**/js/*.js', globOptions);
 
 function writeFileSync(path, contents) {
     const dir = path.substring(0, path.lastIndexOf('/'));
@@ -22,7 +22,7 @@ function writeFileSync(path, contents) {
 
 for (var i = 0; i < files.length; ++i) {
     const file = files[i];
-    const jsIn = fs.readFileSync(file);
+    const jsIn = fs.readFileSync(file, "utf8");
     const jsOut = UglifyJS.minify(jsIn).code;
     writeFileSync([outputDir, file].join('/'), jsOut);
 }

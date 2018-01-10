@@ -14,7 +14,8 @@ const globOptions = {
 const filePatterns = [
     'CNAME',
     '**/*.html',
-    '**/assets/img/*'
+    '**/*.htc',
+    '**/assets/**/images/*'
 ];
 
 function writeFileSync(path, contents) {

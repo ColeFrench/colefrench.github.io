@@ -14,7 +14,7 @@ const globOptions = {
         'build/**/*'
     ]
 };
-const files = glob.sync('**/assets/css/*.css', globOptions);
+const files = glob.sync('**/assets/**/css/*.css', globOptions);
 
 function writeFileSync(path, contents) {
     const dir = path.substring(0, path.lastIndexOf('/'));
