@@ -7,11 +7,11 @@ body, body::after {
 }
 
 body {
-    background-image: url("../vendor/images/oeverlay.png"), linear-gradient(60deg, rgba(88, 85, 173, 0.35) 5%, rgba(11, 13, 59, 0.35)), url("../images/background.jpg");
+    background-image: url("../vendor/images/overlay.png"), linear-gradient(60deg, rgba(88, 85, 173, 0.35) 5%, rgba(11, 13, 59, 0.35)), url("../images/background.jpg");
 }
 
 body::after {
-    background-image: url("../vendor/images/oeverlay.png"), linear-gradient(60deg, rgba(88, 85, 173, 0.35) 5%, rgba(11, 13, 59, 0.35));
+    background-image: url("../vendor/images/overlay.png"), linear-gradient(60deg, rgba(88, 85, 173, 0.35) 5%, rgba(11, 13, 59, 0.35));
 }
 
 #main {
