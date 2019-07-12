@@ -10,9 +10,6 @@ script:
          --data '{"purge_everything":true}'
   - npm run clean
   - npm run build
-cache:
-  directories:
-    - node_modules
 branches:
   only:
     - src
