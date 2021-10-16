@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - src
+  workflow_dispatch:
+    branches:
+      - src
 jobs:
   build:
     runs-on: ubuntu-20.04
