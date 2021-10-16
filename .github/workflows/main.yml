@@ -17,6 +17,8 @@ jobs:
       - name: Build
         run: npm run build
   purge-cache:
+    needs:
+      - build
     environment: cloudflare
     runs-on: ubuntu-20.04
     steps:
