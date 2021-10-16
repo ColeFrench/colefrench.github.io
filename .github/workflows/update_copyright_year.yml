@@ -14,14 +14,11 @@ jobs:
         uses: FantasticFiasco/action-update-license-year@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          labels: automerge
   update-index-html:
     needs: update-license
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: src
       - name: Update copyright year in index.html
         uses: FantasticFiasco/action-update-license-year@v2
         with:
