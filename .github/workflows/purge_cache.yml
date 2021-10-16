@@ -1,0 +1,23 @@
+name: Purge cache
+on:
+  workflow_run:
+    workflows:
+      - Build and deploy
+    types:
+      - completed
+  workflow_dispatch:
+    branches:
+      - src
+jobs:
+  purge-cache:
+    if: ${{ github.event.workflow_run == null || github.event.workflow_run.conclusion == 'success' }}
+    environment: cloudflare
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Purge Cloudflare cache
+        run: |
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE }}/purge_cache" \
+            -H "X-Auth-Email: ${{ secrets.CLOUDFLARE_EMAIL }}" \
+            -H "X-Auth-Key: ${{ secrets.CLOUDFLARE_KEY }}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}'

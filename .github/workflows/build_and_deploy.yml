@@ -7,7 +7,7 @@ on:
     branches:
       - src
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -21,25 +21,6 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-  purge-cache:
-    needs:
-      - build
-    environment: cloudflare
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Purge Cloudflare cache
-        run: |
-          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE }}/purge_cache" \
-            -H "X-Auth-Email: ${{ secrets.CLOUDFLARE_EMAIL }}" \
-            -H "X-Auth-Key: ${{ secrets.CLOUDFLARE_KEY }}" \
-            -H "Content-Type: application/json" \
-            --data '{"purge_everything":true}'
-  deploy:
-    needs:
-      - build
-      - purge-cache
-    runs-on: ubuntu-20.04
-    steps:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
