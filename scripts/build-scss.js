@@ -3,7 +3,7 @@
 const fs = require('fs');
 const glob = require('glob');
 const mkdirp = require('mkdirp');
-const sass = require('node-sass');
+const sass = require('sass');
 const autoprefixer = require('autoprefixer');
 const postcss = require('postcss');
 const CleanCSS = require('clean-css');
@@ -30,7 +30,7 @@ for (var i = 0; i < files.length; ++i) {
     const result = sass.renderSync({
         file: file
     });
-    
+
     file = file.replace(/scss/g, 'css');
     writeFileSync(file, result.css);
     intermediateFiles.push(file);
@@ -48,6 +48,6 @@ for (var i = 0; i < intermediateFiles.length; ++i) {
         const cssOut = new CleanCSS().minify(result.css).styles;
         writeFileSync([outputDir, file].join('/'), cssOut);
     });
-    
+
     rimraf.sync(file);
 }
