@@ -1,0 +1,41 @@
+name: Build and deploy
+on:
+  push:
+    branches:
+      - src
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - name: Build
+        run: npm run build
+  purge-cache:
+    environment: cloudflare
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Purge Cloudflare cache
+        run: |
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE }}/purge_cache" \
+            -H "X-Auth-Email: ${{ secrets.CLOUDFLARE_EMAIL }}" \
+            -H "X-Auth-Key: ${{ secrets.CLOUDFLARE_KEY }}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}'
+  deploy:
+    needs:
+      - build
+      - purge-cache
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: main
