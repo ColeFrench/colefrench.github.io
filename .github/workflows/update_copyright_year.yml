@@ -10,10 +10,13 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Update copyright year in license
+      - name: Update copyright year in LICENSE
         uses: FantasticFiasco/action-update-license-year@v2
         with:
           token: ${{ secrets._GITHUB_PAT }}  # trigger automerge
+          branchName: license/LICENSE-copyright-to-{{currentYear}}
+          commitTitle: Update copyright year in LICENSE
+          prTitle: Update copyright year in LICENSE
           labels: automerge
   update-index-html:
     runs-on: ubuntu-20.04
@@ -27,3 +30,7 @@ jobs:
           token: ${{ secrets._GITHUB_PAT }}  # trigger automerge
           path: index.html
           transform: (?<=&copy; )(?<from>\d{4})?(?:(?<=\d{4})-(\d{4}))?(?= Cole French)
+          branchName: license/index-html-copyright-to-{{currentYear}}
+          commitTitle: Update copyright year in index.html
+          prTitle: Update copyright year in index.html
+          labels: automerge
