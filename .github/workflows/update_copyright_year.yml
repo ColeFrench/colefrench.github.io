@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          fetch-depth: 0
           ref: src
       - name: Update copyright year in license
         uses: FantasticFiasco/action-update-license-year@v2
@@ -19,6 +20,8 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Update copyright year in index.html
         uses: FantasticFiasco/action-update-license-year@v2
         with:
