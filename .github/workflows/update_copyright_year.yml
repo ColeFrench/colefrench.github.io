@@ -10,14 +10,12 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          ref: src
       - name: Update copyright year in license
         uses: FantasticFiasco/action-update-license-year@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets._GITHUB_PAT }}  # trigger automerge
           labels: automerge
   update-index-html:
-    needs: update-license
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
