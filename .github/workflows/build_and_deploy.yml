@@ -8,6 +8,9 @@ on:
       - src
 jobs:
   build-and-deploy:
+    concurrency:
+      group: build-and-deploy-${{ github.ref }}
+      cancel-in-progress: true
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout

@@ -19,6 +19,8 @@ on:
   status:
 jobs:
   automerge:
+    concurrency:
+      group: automerge-${{ github.head_ref }}
     runs-on: ubuntu-20.04
     steps:
       - name: Merge pull requests labeled "automerge"

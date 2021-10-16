@@ -9,6 +9,8 @@ on:
 jobs:
   purge-cache:
     if: ${{ github.event.workflow_run == null || github.event.workflow_run.conclusion == 'success' }}
+    concurrency:
+      group: purge-cache
     environment: cloudflare
     runs-on: ubuntu-20.04
     steps:
