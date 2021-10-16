@@ -27,5 +27,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           path: index.html
-          transform: (?<=&copy; )(?<from>\d{4})(?= Cole French)
+          transform: (?<=&copy; )(?<from>\d{4})?(?:(?<=\d{4})-(\d{4}))?(?= Cole French)
           labels: automerge
