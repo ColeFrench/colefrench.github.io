@@ -26,6 +26,6 @@ jobs:
       - name: Update copyright year in index.html
         uses: FantasticFiasco/action-update-license-year@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets._GITHUB_PAT }}  # trigger automerge
           path: index.html
           transform: (?<=&copy; )(?<from>\d{4})?(?:(?<=\d{4})-(\d{4}))?(?= Cole French)
