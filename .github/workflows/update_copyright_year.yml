@@ -15,6 +15,7 @@ jobs:
         uses: FantasticFiasco/action-update-license-year@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          labels: automerge
   update-index-html:
     needs: update-license
     runs-on: ubuntu-20.04
@@ -28,4 +29,3 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           path: index.html
           transform: (?<=&copy; )(?<from>\d{4})?(?:(?<=\d{4})-(\d{4}))?(?= Cole French)
-          labels: automerge
