@@ -9,10 +9,6 @@ const routes = [
     path: '/about',
   },
   {
-    label: 'Resume',
-    path: '/resume',
-  },
-  {
     label: 'Projects',
     path: '/projects',
   },
