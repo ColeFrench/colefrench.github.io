@@ -33,17 +33,17 @@
 
 // Palette.
 	$palette: (
-		bg:							#ffffff,
+		bg:							#110022,
 		bg-alt:	(
 									background-image: url('../../images/background.jpg'),
 									background-size: cover,
 									background-attachment: fixed
 		),
-		fg:							#646464,
-		fg-bold:					#3c3b3b,
-		fg-light:					#aaaaaa,
+		fg:							#ddddff,
+		fg-bold:					#ddccff,
+		fg-light:					#ffffff,
 		border:						rgba(160,160,160,0.3),
 		border-bg:					rgba(160,160,160,0.075),
 		border-alt:					rgba(160,160,160,0.65),
-		accent:						#2e59ba
+		accent:						#aa99ff
 	);
