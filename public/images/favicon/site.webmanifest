@@ -1,0 +1,19 @@
+{
+    "name": "Cole French",
+    "short_name": "Cole French",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#5855ad",
+    "background_color": "#da532c",
+    "display": "standalone"
+}
