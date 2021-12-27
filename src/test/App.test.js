@@ -12,7 +12,6 @@ import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Index from '../pages/Index';
 import NotFound from '../pages/NotFound';
-import Stats from '../pages/Stats';
 
 const pages = [
   {
@@ -24,11 +23,6 @@ const pages = [
     route: '/about',
     heading: 'About Me',
     component: About,
-  },
-  {
-    route: '/stats',
-    heading: 'Stats',
-    component: Stats,
   },
   {
     route: '/contact',
