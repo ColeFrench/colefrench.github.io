@@ -16,24 +16,9 @@ const SideBar = () => (
       </header>
     </section>
 
-    <section className="blurb">
-      <h2>About</h2>
-      <p>
-        Curabitur mauris magna, congue in elementum rhoncus, malesuada id ipsum.
-        Nulla sapien mauris, molestie ac pellentesque dapibus, dignissim a magna.
-        Quisque non finibus ante.
-        Aliquam erat volutpat.
-      </p>
-      <ul className="actions">
-        <li>
-          <Link to="/about" className="button">About Me</Link>
-        </li>
-      </ul>
-    </section>
-
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; Cole French <Link to="/">cfrench.me</Link>.</p>
+      <p className="copyright">&copy; 2021 Cole French <Link to="/">cfrench.me</Link>.</p>
     </section>
   </section>
 );
