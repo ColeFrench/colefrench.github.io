@@ -34,7 +34,11 @@
 // Palette.
 	$palette: (
 		bg:							#ffffff,
-		bg-alt:						#f4f4f4,
+		bg-alt:	(
+									background-image: url('../../images/background.jpg'),
+									background-size: cover,
+									background-attachment: fixed
+		),
 		fg:							#646464,
 		fg-bold:					#3c3b3b,
 		fg-light:					#aaaaaa,

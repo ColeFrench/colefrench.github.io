@@ -24,7 +24,9 @@
 		}
 
 	body {
-		background: _palette(bg-alt);
+		@each $property, $value in _palette(bg-alt) {
+			#{$property}: #{$value};
+		}
 
 		// Prevents animation/transition "flicker" on page load.
 		// Automatically added/removed by js/main.js.
