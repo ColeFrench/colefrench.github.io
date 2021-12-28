@@ -5,8 +5,9 @@ const routes = [
     path: '/',
   },
   {
+    firstInBurger: true,
     label: 'About',
-    path: '/about',
+    path: '/',
   },
 ];
 
