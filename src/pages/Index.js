@@ -15,9 +15,7 @@ const Index = () => (
           </p>
         </div>
       </header>
-      <p> Welcome to my website. Please feel free to read more <Link to="/about">about me</Link>,
-        or you can {' '}
-        <Link to="/contact">contact</Link> me.
+      <p> Welcome to my website. Please feel free to read more <Link to="/about">about me</Link>.
       </p>
       <p> Source available <a href="https://github.com/ColeFrench/colefrench.github.io">here</a>.</p>
     </article>
