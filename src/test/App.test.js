@@ -14,7 +14,7 @@ import NotFound from '../pages/NotFound';
 const pages = [
   {
     route: '/',
-    heading: 'About this site',
+    heading: 'About',
     component: Index,
   },
 ];
