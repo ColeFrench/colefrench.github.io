@@ -1,11 +1,16 @@
 {
-  "name": "personal-site",
-  "version": "3.0.1",
-  "homepage": "https://mldangelo.com/",
+  "name": "colefrench-github-io",
+  "version": "2.0.0",
+  "description": "My personal website.",
+  "homepage": "https://cfrench.me/",
+  "bugs": {
+    "url": "https://github.com/ColeFrench/colefrench.github.io/issues"
+  },
   "license": "MIT",
+  "author": "Cole French",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mldangelo/personal-site.git"
+    "url": "git+https://github.com/ColeFrench/colefrench.github.io.git"
   },
   "scripts": {
     "build": "rimraf ./build && react-scripts build",
