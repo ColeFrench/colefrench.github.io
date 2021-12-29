@@ -7,23 +7,25 @@ import Navigation from '../components/Template/Navigation';
 import SideBar from '../components/Template/SideBar';
 import ScrollToTop from '../components/Template/ScrollToTop';
 
-const Main = (props) => (
-  <HelmetProvider>
-    <Analytics />
-    <ScrollToTop />
-    <Helmet titleTemplate="%s | Cole French" defaultTitle="Cole French" defer={false}>
-      {props.title && <title>{props.title}</title>}
-      <meta name="description" content={props.description} />
-    </Helmet>
-    <div id="wrapper">
-      <Navigation />
-      <div id="main">
-        {props.children}
+function Main(props) {
+  return (
+    <HelmetProvider>
+      <Analytics />
+      <ScrollToTop />
+      <Helmet titleTemplate="%s | Cole French" defaultTitle="Cole French" defer={false}>
+        {props.title && <title>{props.title}</title>}
+        <meta name="description" content={props.description} />
+      </Helmet>
+      <div id="wrapper">
+        <Navigation />
+        <div id="main">
+          {props.children}
+        </div>
+        {props.fullPage ? null : <SideBar />}
       </div>
-      {props.fullPage ? null : <SideBar />}
-    </div>
-  </HelmetProvider>
-);
+    </HelmetProvider>
+  );
+}
 
 Main.propTypes = {
   children: PropTypes.oneOfType([

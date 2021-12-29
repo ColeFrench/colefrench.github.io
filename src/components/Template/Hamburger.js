@@ -5,7 +5,7 @@ import routes from '../../data/routes';
 
 const Menu = lazy(() => import('react-burger-menu/lib/menus/slide'));
 
-const Hamburger = () => {
+function Hamburger() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -23,7 +23,7 @@ const Hamburger = () => {
           )}
         </ul>
       </nav>
-      <Suspense fallback={<></>}>
+      <Suspense fallback={null}>
         <Menu right isOpen={open} onOpen={() => setOpen(true)} onClose={() => setOpen(false)}>
           <ul className="hamburger-ul">
             {routes.filter((l) => !l.index).map((l) => (
@@ -38,6 +38,6 @@ const Hamburger = () => {
       </Suspense>
     </div>
   );
-};
+}
 
 export default Hamburger;
