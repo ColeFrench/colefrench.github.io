@@ -8,7 +8,7 @@ if (NODE_ENV === 'production') {
   ReactGA.initialize(REACT_APP_GA_TRACKING_ID);
 }
 
-const Analytics = () => {
+function Analytics() {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -21,6 +21,6 @@ const Analytics = () => {
   }, [pathname]);
 
   return null;
-};
+}
 
 export default Analytics;
