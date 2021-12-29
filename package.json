@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "0.1.16",
     "dayjs": "^1.10.7",
@@ -32,7 +32,7 @@
     "prop-types": "^15.7.2",
     "raw.macro": "^0.4.2",
     "react": "^17.0.2",
-    "react-burger-menu": "^3.0.3",
+    "react-burger-menu": "^3.0.6",
     "react-dom": "^17.0.2",
     "react-ga": "^3.3.0",
     "react-helmet-async": "^1.2.2",
@@ -43,7 +43,7 @@
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.3",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
