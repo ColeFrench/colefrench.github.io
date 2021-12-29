@@ -43,7 +43,7 @@
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.3",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
