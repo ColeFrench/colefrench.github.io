@@ -29,7 +29,7 @@
     "dayjs": "^1.10.7",
     "gh-pages": "^3.2.3",
     "node-sass": "^7.0.1",
-    "prop-types": "^15.8.0",
+    "prop-types": "^15.8.1",
     "raw.macro": "^0.4.2",
     "react": "^17.0.2",
     "react-burger-menu": "^3.0.6",
