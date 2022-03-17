@@ -17,7 +17,7 @@ function SideBar() {
 
       <section id="footer">
         <ContactIcons />
-        <p className="copyright">&copy; 2021 <Link to="/">Cole French</Link>. Base design by <a href="https://html5up.net">HTML5 UP</a> and <a href="https://mldangelo.com">Michael D&apos;Angelo</a>.</p>
+        <p className="copyright">&copy; 2022 <Link to="/">Cole French</Link>. Base design by <a href="https://html5up.net">HTML5 UP</a> and <a href="https://mldangelo.com">Michael D&apos;Angelo</a>.</p>
       </section>
     </section>
   );
