@@ -17,7 +17,7 @@ function App() {
       <Suspense fallback={<Main />}>
         <Routes>
           <Route exact path="/" element={<Index />} />
-          <Route element={<NotFound />} status={404} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
