@@ -11,6 +11,8 @@ import { BrowserRouter } from 'react-router-dom';
 import Index from '../pages/Index';
 import NotFound from '../pages/NotFound';
 
+jest.mock('../components/Markdown');
+
 const pages = [
   {
     route: '/',

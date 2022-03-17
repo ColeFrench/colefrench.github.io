@@ -3,14 +3,12 @@ import { Link } from 'react-router-dom';
 
 import ContactIcons from '../Contact/ContactIcons';
 
-const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
-
 function SideBar() {
   return (
     <section id="sidebar">
       <section id="intro">
         <Link to="/" className="logo">
-          <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
+          <img src={`${process.env.PUBLIC_PATH}images/me.jpg`} alt="" />
         </Link>
         <header>
           <h2>Cole French</h2>

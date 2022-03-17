@@ -13,9 +13,12 @@ function StrictApp() {
 
 const rootElement = document.getElementById('root');
 
-// hydrate is required by react-snap.
 if (rootElement.hasChildNodes()) {
   hydrate(<StrictApp />, rootElement);
 } else {
   render(<StrictApp />, rootElement);
+}
+
+if (module.hot) {
+  module.hot.accept();
 }
