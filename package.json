@@ -1,6 +1,6 @@
 {
   "name": "colefrench-github-io",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "My personal website.",
   "homepage": "https://cfrench.me/",
   "bugs": {
@@ -15,7 +15,6 @@
   },
   "scripts": {
     "build": "rimraf ./build && razzle build --noninteractive",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build -b main",
     "start": "razzle start",
     "serve": "serve -s build/public",

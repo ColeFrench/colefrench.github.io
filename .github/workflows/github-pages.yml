@@ -15,9 +15,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 14.x
-    - name: Install
-      run: CI= npm ci
-    - name: Build and Deploy
+    - name: Install and Build
+      run: npm ci && CI= npm run build
+    - name: Deploy
       env:
         NODE_ENV: production
         # This is set automatically by github
