@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-import Analytics from '../components/Template/Analytics';
 import Navigation from '../components/Template/Navigation';
 import SideBar from '../components/Template/SideBar';
 import ScrollToTop from '../components/Template/ScrollToTop';
@@ -10,7 +9,6 @@ import ScrollToTop from '../components/Template/ScrollToTop';
 function Main(props) {
   return (
     <HelmetProvider>
-      <Analytics />
       <ScrollToTop />
       <Helmet titleTemplate="%s | Cole French" defaultTitle="Cole French" defer={false}>
         {props.title && <title>{props.title}</title>}
