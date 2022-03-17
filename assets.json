@@ -1,0 +1,84 @@
+{
+  "264": {
+    "js": [
+      "/static/js/264.d5019312.chunk.js"
+    ],
+    "chunks": [
+      264
+    ]
+  },
+  "432": {
+    "js": [
+      "/static/js/432.df871184.chunk.js"
+    ],
+    "chunks": [
+      432
+    ]
+  },
+  "751": {
+    "js": [
+      "/static/js/751.43ec3559.chunk.js"
+    ],
+    "chunks": [
+      751
+    ]
+  },
+  "client": {
+    "css": [
+      "/static/css/client.997e7320.css"
+    ],
+    "js": [
+      "/static/js/client.aef83780.js"
+    ],
+    "chunks": [
+      47
+    ]
+  },
+  "noentry": {
+    "svg": [
+      "/images/favicon/safari-pinned-tab.svg"
+    ],
+    "jpg": [
+      "/images/me.jpg",
+      "/static/media/background.5f969f8d.jpg"
+    ],
+    "png": [
+      "/images/favicon/android-chrome-512x512.png",
+      "/images/favicon/android-chrome-192x192.png",
+      "/images/favicon/apple-touch-icon.png",
+      "/images/favicon/mstile-150x150.png",
+      "/images/favicon/favicon-32x32.png",
+      "/images/favicon/favicon-16x16.png"
+    ],
+    "ico": [
+      "/images/favicon/favicon.ico"
+    ],
+    "txt": [
+      "/static/js/client.aef83780.js.LICENSE.txt",
+      "/static/js/751.43ec3559.chunk.js.LICENSE.txt",
+      "/robots.txt"
+    ],
+    "html": [
+      "/index.html"
+    ],
+    "md": [
+      "/static/media/about.6b187db5.md"
+    ],
+    "webmanifest": [
+      "/images/favicon/site.webmanifest"
+    ],
+    "xml": [
+      "/images/favicon/browserconfig.xml"
+    ],
+    "/CNAME": [
+      "/CNAME"
+    ],
+    "map": [
+      "/static/css/client.997e7320.css.map",
+      "/static/js/client.aef83780.js.map",
+      "/static/js/751.43ec3559.chunk.js.map",
+      "/static/js/264.d5019312.chunk.js.map",
+      "/static/js/432.df871184.chunk.js.map"
+    ]
+  }
+}
