@@ -1,7 +1,12 @@
-Cole French is a rising senior pursuing a Computer Science degree at [Harvard College](https://college.harvard.edu). Cole thought it would be funny to describe himself in the third person. If you disagree, then you're objectively wrong. That was another joke.
+### Who is Cole French?
+Thanks for asking. I am a senior at [Harvard College](https://college.harvard.edu) studying Computer Science. An engineer at heart, I enjoy designing solutions to technical challenges and tinkering with existing ones.
 
-# What I Do for Work
-As a full-time student, I've learned a lot about machine learning and security—but fundamentally, I'm a problem solver. I hope that my knowledge, imagination, and drive make me a good one.
+#### Interests
+Much of my academic work is in machine learning. I am captivated by deep learning models, whose abilities already exceed humans' at almost any task. Do you think humanity has a place in this superintelligent future? &mdash;Sorry, too existential.
 
-# What I Do for Fun
-I love to casually compete in sports like tennis and chess (I assure you, it's a sport. Source: company that benefits from people believing [chess is a sport](https://www.chess.com/article/view/is-chess-a-sport)). I run Harvard's [Minecraft club](https://humc.club) and write for [Satire V](https://satirev.org). I also write poetry, which you can look forward to seeing on this website in the future.
+I love to program, especially when it involves dealing with constraints—whether working within them, as in systems programming, or trying to escape them, as in security research.
+
+#### Hobbies
+At Harvard, I preside over the [Minecraft club](https://humc.club) ("Wait, there's a Minecraft club?"), write [satire](https://satirev.org), and play for the [chess club](https://www.harvardchessclub.org).
+
+Outside of that, I enjoy writing poetry, playing tennis, and accidentally finding SQL injection vulnerabilities in Harvard's student database.
