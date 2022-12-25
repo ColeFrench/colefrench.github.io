@@ -4,10 +4,18 @@
 
   p {
     margin: auto;
+
+    & + p {
+      margin-top: _size(element-margin) / 2;
+    }
   }
 
   h1 {
     font-size: .8em;
     margin-top: 3em;
+  }
+
+  h3, h4, h5, h6 {
+    margin-top: _size(element-margin);
   }
 }
