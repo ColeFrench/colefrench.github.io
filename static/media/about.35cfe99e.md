@@ -4,7 +4,7 @@ Thanks for asking. I am a senior at [Harvard College](https://college.harvard.ed
 #### Interests
 Much of my academic work is in machine learning. I am captivated by deep learning models, whose abilities already exceed humans' at almost any task. We must seriously consider how humanity will fit into this superintelligent future.
 
-Existential thoughts aside, I love to build software founded on good design principles: modularity, testability, scale, and TODO: lack of bugs. I enjoy working within constraints, as in systems programming, but also trying to escape them, as in security research.
+Existential thoughts aside, I love to build software founded on good design principles: modularity, testability, scalability, and TODO: lack of bugs. I enjoy working within constraints, as in systems programming, but also trying to escape them, as in security research.
 
 #### Hobbies
 At Harvard, I preside over the [Minecraft club](https://humc.club) ("Wait, there's a Minecraft club?"), write [satire](https://satirev.org), and play for the [chess club](https://www.harvardchessclub.org).
