@@ -62,7 +62,7 @@
     "url": "^0.11.0",
     "util": "^0.12.5",
     "webpack": "^5.76.2",
-    "webpack-dev-server": "^4.12.0"
+    "webpack-dev-server": "^4.13.1"
   },
   "browserslist": {
     "production": [
