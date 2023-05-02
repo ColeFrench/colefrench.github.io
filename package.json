@@ -36,7 +36,7 @@
     "react-router-dom": "^6.11.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.21.3",
+    "@babel/eslint-parser": "^7.21.8",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
     "babel-preset-razzle": "^4.2.18",
