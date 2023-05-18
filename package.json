@@ -55,7 +55,7 @@
     "razzle": "^4.2.16",
     "razzle-dev-utils": "^4.2.16",
     "razzle-plugin-scss": "^4.2.16",
-    "rimraf": "^5.0.0",
+    "rimraf": "^5.0.1",
     "serve": "^14.2.0",
     "source-map-explorer": "^2.5.3",
     "style-loader": "^3.3.2",
