@@ -61,7 +61,7 @@
     "serve": "^14.2.1",
     "source-map-explorer": "^2.5.3",
     "style-loader": "^3.3.3",
-    "url": "^0.11.1",
+    "url": "^0.11.2",
     "util": "^0.12.5",
     "webpack": "^5.88.2",
     "webpack-dev-server": "^4.15.1"
