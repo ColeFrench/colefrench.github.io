@@ -10,7 +10,7 @@ function ContactIcons() {
       {data.map((s) => (
         <li key={s.label}>
           <a href={s.link}>
-            <FontAwesomeIcon icon={s.icon} />
+            <FontAwesomeIcon title={s.label} icon={s.icon} />
           </a>
         </li>
       ))}
