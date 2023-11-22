@@ -35,7 +35,7 @@
     "react-dom": "^18.2.0",
     "react-helmet-async": "^1.3.0",
     "react-markdown": "^9.0.1",
-    "react-router-dom": "^6.19.0",
+    "react-router-dom": "^6.20.0",
     "shell-quote": "^1.8.1"
   },
   "devDependencies": {
