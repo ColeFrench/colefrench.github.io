@@ -41,7 +41,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.5",
     "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^15.0.5",
+    "@testing-library/react": "^15.0.6",
     "babel-preset-razzle": "^4.2.18",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
