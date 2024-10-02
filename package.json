@@ -39,7 +39,7 @@
     "shell-quote": "^1.8.1"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.25.1",
+    "@babel/eslint-parser": "^7.25.7",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "babel-preset-razzle": "^4.2.18",
